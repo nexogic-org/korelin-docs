@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korelin 文档</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
+        h2 { margin-top: 24px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code { background-color: #f6f8fa; padding: 0.2em 0.4em; border-radius: 3px; font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 85%; }
+        .warning { background-color: #fff5b1; padding: 10px; border-left: 4px solid #f9c513; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <h1>Korelin 语言文档</h1>
+    
+    <p>欢迎来到 Korelin 语言官方文档。Korelin 是一门运行在 KVM 上的静态类型、面向对象编程语言。</p>
+
+    <div class="warning">
+        <strong>最新更新：</strong> 嵌入式引擎已重命名为 <code>kembed</code>。请参考 <a href="c-c++API.md">C/C++ API 指南</a> 了解详情。
+    </div>
+
+    <h2>文档导航</h2>
+
+    <h3>基础语法</h3>
+    <ul>
+        <li><a href="变量与常量.md">变量与常量</a></li>
+        <li><a href="关键字.md">关键字</a></li>
+        <li><a href="条件.md">条件控制</a></li>
+        <li><a href="循环.md">循环结构</a></li>
+        <li><a href="函数与主函数.md">函数与主函数</a></li>
+        <li><a href="类型转换.md">类型转换</a></li>
+    </ul>
+
+    <h3>数据结构与泛型</h3>
+    <ul>
+        <li><a href="数组.md">数组 (Arrays)</a></li>
+        <li><a href="泛型.md">泛型 (Generics)</a></li>
+        <li><a href="Map.md">映射 (Maps)</a></li>
+        <li><a href="结构体.md">结构体</a></li>
+    </ul>
+
+    <h3>面向对象</h3>
+    <ul>
+        <li><a href="面向对象编程.md">面向对象编程</a></li>
+        <li><a href="类的继承.md">类的继承</a></li>
+    </ul>
+
+    <h3>高级特性</h3>
+    <ul>
+        <li><a href="异常与异常处理.md">异常与异常处理</a></li>
+        <li><a href="标准库.md">标准库参考</a></li>
+        <li><a href="命令行.md">命令行工具 (CLI)</a></li>
+        <li><a href="包管理.md">包管理 (Rungo)</a></li>
+    </ul>
+
+    <h3>底层原理与扩展</h3>
+    <ul>
+        <li><a href="KVM原理.md">KVM 原理</a></li>
+        <li><a href="字节码.md">字节码规范</a></li>
+        <li><a href="c-c++API.md">C/C++ API 指南 (Kembed)</a> - <strong>嵌入式集成必读</strong></li>
+    </ul>
+
+    <h2>快速开始</h2>
+    <pre><code>// main.kri
+import os;
+
+void main() {
+    os.println("Hello, Korelin!");
+}</code></pre>
+    <p>运行：<code>korelin run main.kri</code></p>
+    
+</body>
+</html>
